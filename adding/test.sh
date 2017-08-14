@@ -1,0 +1,1 @@
+node ./1-adding.js <<< "2 3"
