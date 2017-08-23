@@ -1,1 +1,6 @@
 node_modules
+/majority/Majority/nbproject/private/
+/majority/Majority/build/
+/java/.idea
+/java/out
+.idea
