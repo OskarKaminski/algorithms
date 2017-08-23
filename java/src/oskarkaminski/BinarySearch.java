@@ -14,19 +14,12 @@ public class BinarySearch {
                 return searchKey(sequence, value, l, middle - 1);
             }
             else {
-//                System.out.println("l: " + l);
-//                System.out.println("r: " + r);
-//                System.out.println("value: " + value);
-//                System.out.println("middle: " + middle);
                 return middle;
             }
         } else {
             if(value == sequence[l]){
                 return l;
             } else {
-//                System.out.println("l: " + l);
-//                System.out.println("r: " + r);
-//                System.out.println("value: " + value);
                 return -1;
             }
         }
@@ -43,6 +36,5 @@ public class BinarySearch {
             results[i - 1] = searchKey(justNumbers, keysToSearch[i], 0, sequence[0]-1);
             System.out.print(results[i-1] + " ");
         }
-//        System.out.print(results[0]);
     }
 }
