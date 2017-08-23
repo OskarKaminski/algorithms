@@ -31,10 +31,9 @@ public class BinarySearch {
         int[] keysToSearch = Arrays.stream(r.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
 
         int[] justNumbers = Arrays.copyOfRange(sequence, 1, sequence[0]+1);
-        long[] results = new long[9999999];
         for (int i = 1; i <= keysToSearch[0]; i++) {
-            results[i - 1] = searchKey(justNumbers, keysToSearch[i], 0, sequence[0]-1);
-            System.out.print(results[i-1] + " ");
+            int result = searchKey(justNumbers, keysToSearch[i], 0, sequence[0]-1);
+            System.out.print(result + " ");
         }
     }
 }
