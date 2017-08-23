@@ -7,7 +7,7 @@ public class BinarySearch {
 
     private static int searchKey(int[] sequence, int value, int l, int r) {
         if (l < r) {
-            int middle = (int) Math.floor(l + ((r - l) / 2));
+            int middle = l + ((r - l) / 2);
             if (value > sequence[middle]) {
                 return searchKey(sequence, value, middle+1, r);
             } else if (value < sequence[middle]){
